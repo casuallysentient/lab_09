@@ -24,6 +24,7 @@ def create_entry(number, name, type_1, type_2, health_points, attack, defense, s
     else:
         types = (type_1, type_2)
     entry = {'Number': number, "Name": name, 'Types': types, 'Battle Stats': battle_stats, 'Generation': generation, 'Legendary': is_legendary}
+    return entry
 
 def create_pokedex(filepath):
     """
