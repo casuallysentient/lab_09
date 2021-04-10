@@ -22,6 +22,7 @@ def get_word_counts(filepath):
                     word_count[y] += 1
                 else:
                     word_count[y] = 1
+        file.close()
         return word_count
 
 

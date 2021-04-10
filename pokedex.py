@@ -49,6 +49,7 @@ def create_pokedex(filepath):
                 else:
                     legendary = False
                 pokedex[stats[1]] = create_entry(int(stats[0]), stats[1], stats[2], stats[3], int(stats[4]), int(stats[5]), int(stats[6]), int(stats[7]), int(stats[8]), int(stats[9]), int(stats[10]), legendary)
+        file.close()
         return pokedex
 
 
