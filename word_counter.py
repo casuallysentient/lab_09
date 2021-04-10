@@ -16,15 +16,13 @@ def get_word_counts(filepath):
         lists = [line.strip() for line in file]
         word_count = {}
         for x in lists:
-            words = x.lower().split()
+            words = x.lower().split(" ")
             for y in words:
                 if y in word_count:
                     word_count[y] += 1
                 else:
                     word_count[y] = 1
         return word_count
-
-
 
 
 def main():
